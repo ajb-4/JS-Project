@@ -7,6 +7,8 @@ class User {
        
     }
 
+    
+
     createNewScenario() {
         
     }
