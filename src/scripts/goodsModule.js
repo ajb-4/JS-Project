@@ -4,7 +4,7 @@ export async function determineQuantities(totalYield, endDate, preferences) {
 
     Object.keys(preferences).forEach(async function (key){
         const goodExpense = (preferences[key]/100) * totalYield
-        const endPrice = await fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${key}&apikey=MKK0K02W1J79A7UI`)
+        const endPrice = await fetch(`https://www.alphavantage.co/query?function=${key.toUpperCase()}&interval=annual&apikey=MKK0K02W1J79A7UI`)
         .then(res => {
           return res.json();
         })
