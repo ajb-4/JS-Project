@@ -1,10 +1,12 @@
 
 
 export async function calculateYield(invAmount, startDate, duration, invVehicle) {
-
+    
     const growth = await getGrowth(startDate, duration, invVehicle)
+
     const totalYield = invAmount * growth
     console.log(totalYield)
+
     const fetcher = document.getElementById("apifetcher");
     fetcher.innerText = totalYield
     

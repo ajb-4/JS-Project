@@ -7,6 +7,7 @@ import {determineQuantities} from "./scripts/goodsModule";
 
 document.addEventListener("DOMContentLoaded", async function() {
     console.log("Hello world!");
+    
     // const main = document.getElementById("main");
     // new Example(main)
 //     await fetch('https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey=MKK0K02W1J79A7UI')
@@ -19,8 +20,12 @@ document.addEventListener("DOMContentLoaded", async function() {
 //     const fetcher = document.getElementById("apifetcher");
 //     fetcher.innerText = startPrice
 //   });
-  const testButton = document.querySelector(".testbutton")
-  testButton.addEventListener("click", () => calculateYield(1000, 2001, 10, "IBM"))
+  const testButtonYield = document.querySelector(".testbuttonyield");
+  testButtonYield.addEventListener("click", () => calculateYield(1000, 2003, 10, "GS"));
+
+  const testButtonGoods = document.querySelector(".testbuttongoods");
+  testButtonGoods.addEventListener("click", () => determineQuantities(10000, 2013, {"WHEAT": 70, "CORN": 30}));
+
 });
 
 

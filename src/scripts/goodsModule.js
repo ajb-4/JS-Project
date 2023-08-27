@@ -1,8 +1,11 @@
 export async function determineQuantities(totalYield, endDate, preferences) {
 
     let yieldHash = {};
+    const basket = "";
+    const fetcher2 = document.getElementById("apifetcher2");
 
-    Object.keys(preferences).forEach(async function (key){
+    Object.keys(preferences).forEach(async key => {
+
         const goodExpense = (preferences[key]/100) * totalYield
         const endPrice = await fetch(`https://www.alphavantage.co/query?function=${key.toUpperCase()}&interval=annual&apikey=MKK0K02W1J79A7UI`)
         .then(res => {
@@ -10,13 +13,16 @@ export async function determineQuantities(totalYield, endDate, preferences) {
         })
         .then(json => {
           console.log(json);
-          const endPrice = json["Monthly Time Series"][`${endDate}-12-31`]["1. open"]
+          const endPrice = json["data"][`${new Date().getFullYear() - endDate - 1}`]["value"]
           return parseFloat(endPrice);
         });
-        const quantity = goodExpense/endPrice
+
+        const quantity = goodExpense/endPrice;
+        debugger
         yieldHash[key] = quantity;
+        fetcher2.innerText += `${yieldHash[key]}  ${key}'s`;
     })
 
-    return yieldHash;
-
+    debugger
+    console.log(yieldHash);
 };
