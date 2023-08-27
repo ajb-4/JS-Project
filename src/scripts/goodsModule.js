@@ -18,11 +18,11 @@ export async function determineQuantities(totalYield, endDate, preferences) {
         });
 
         const quantity = goodExpense/endPrice;
-        debugger
+     
         yieldHash[key] = quantity;
         fetcher2.innerText += `${yieldHash[key]}  ${key}'s`;
     })
 
-    debugger
+    
     console.log(yieldHash);
 };
