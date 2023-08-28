@@ -3,3 +3,45 @@
 #main {
     color: $color;
 }
+
+.investmentbox {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid $color;
+    padding: 20px;
+}
+
+.vehiclebox {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid $color;
+    padding: 20px;
+}
+
+.yieldbox {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid $color;
+    padding: 20px;
+}
+
+.investmentbox > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vehiclebox > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.yieldbox > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
