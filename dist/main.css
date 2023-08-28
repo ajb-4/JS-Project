@@ -13,11 +13,19 @@
   color: darkblue;
 }
 
+.scenario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .investmentbox {
   display: flex;
   justify-content: flex-start;
   border: 2px solid darkblue;
   padding: 20px;
+  height: 60px;
+  flex-direction: column;
 }
 
 .vehiclebox {
@@ -25,6 +33,7 @@
   justify-content: flex-start;
   border: 2px solid darkblue;
   padding: 20px;
+  flex-direction: column;
 }
 
 .yieldbox {
@@ -32,22 +41,5 @@
   justify-content: flex-start;
   border: 2px solid darkblue;
   padding: 20px;
-}
-
-.investmentbox > * {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.vehiclebox > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.yieldbox > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
