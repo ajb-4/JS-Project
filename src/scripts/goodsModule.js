@@ -1,8 +1,8 @@
-export async function determineQuantities(totalYield, endDate, preferences) {
+export async function determineQuantities(totalYield, endDate, preferences, scen) {
 
     let yieldHash = {};
     const basket = "";
-    const fetcher2 = document.getElementById("apifetch");
+    const fetcher2 = document.getElementById(`apifetch${scen}`);
 
     Object.keys(preferences).forEach(async key => {
 

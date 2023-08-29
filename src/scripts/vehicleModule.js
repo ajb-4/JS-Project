@@ -1,12 +1,12 @@
 
-export async function calculateYield(invAmount, startDate, duration, invVehicle) {
-    
+export async function calculateYield(invAmount, startDate, duration, invVehicle, scenyield) {
+    debugger
     const growth = await getGrowth(startDate, duration, invVehicle)
 
     const totalYield = invAmount * growth
     console.log(totalYield)
 
-    const fetcher = document.getElementById("apifetcher");
+    const fetcher = document.getElementById(`apifetcher${scenyield}`);
     fetcher.innerText = totalYield
     fetcher.setAttribute("value", `${totalYield}`)
     
