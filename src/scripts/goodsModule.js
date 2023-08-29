@@ -20,7 +20,7 @@ export async function determineQuantities(totalYield, endDate, preferences, scen
         const quantity = goodExpense/endPrice;
      
         yieldHash[key] = quantity;
-        fetcher2.innerText += `${yieldHash[key]}  ${key}'s`;
+        fetcher2.innerText += `${key}: ${yieldHash[key]} pounds \n`;
     })
 
     

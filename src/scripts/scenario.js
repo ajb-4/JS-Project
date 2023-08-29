@@ -33,13 +33,13 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
   <label for="">Start Year:
     <input type="number" name="startDate" id="startDate${this.num}">
   </label>
-</div>
-
-<div class="vehiclebox">
+  <br>
   <label for="">Duration:
     <input type="number" name="duration" id="duration${this.num}">
   </label>
-  <br>
+</div>
+
+<div class="vehiclebox">
   <label for="">Vehicle:
     <input type="text" name="invVehicle" id="invVehicle${this.num}">
   </label>
@@ -48,7 +48,6 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
   <br>
   <div id="apifetcher${this.num}">Total Yield</div>
 </div>
-
 
 <div class="yieldbox">
   <input type="button" value="Customize My Basket" class="customizebasket" id="customizebasket${this.num}">

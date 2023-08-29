@@ -1,13 +1,27 @@
-@import "./styles/example.scss";
+$color: darkblue;
 
 #main {
     color: $color;
 }
 
+#main {
+    border: 4px solid $color;
+    padding: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: $color;
+}
+
+
 .scenario {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: dashed $color;
 }
 
 .investmentbox {
@@ -15,7 +29,7 @@
     justify-content: flex-start;
     border: 2px solid $color;
     padding: 20px;
-    height: 60px;
+    height: 100px;
     flex-direction: column;
 }
 
@@ -25,6 +39,7 @@
     border: 2px solid $color;
     padding: 20px;
     flex-direction: column;
+    height: 100px;
 }
 
 .yieldbox {
@@ -33,9 +48,32 @@
     border: 2px solid $color;
     padding: 20px;
     flex-direction: column;
+    height: 100px;
 }
 
 .modalcontainer {
     display: none;
 }
 
+#githublogo {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 50px;
+}
+
+#linkedinlogo {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    width: 45px;
+}
+
+.testbuttonaddscenario {
+   background-color: lightgreen;
+}
+
+.deleteScenario {
+    background-color: rgb(237, 49, 49);
+    height: 50px;
+}
