@@ -2,7 +2,7 @@ export async function determineQuantities(totalYield, endDate, preferences) {
 
     let yieldHash = {};
     const basket = "";
-    const fetcher2 = document.getElementById("apifetcher2");
+    const fetcher2 = document.getElementById("apifetch");
 
     Object.keys(preferences).forEach(async key => {
 
@@ -13,6 +13,7 @@ export async function determineQuantities(totalYield, endDate, preferences) {
         })
         .then(json => {
           console.log(json);
+          debugger
           const endPrice = json["data"][`${new Date().getFullYear() - endDate - 1}`]["value"]
           return parseFloat(endPrice);
         });

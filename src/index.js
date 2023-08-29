@@ -1,30 +1,48 @@
-import User from "./scripts/user";
 import Scenario from "./scripts/scenario";
 import {calculateYield} from "./scripts/vehicleModule";
 import {determineQuantities} from "./scripts/goodsModule";
 
-// const yahooFinance = require('yahoo-finance');
 
 document.addEventListener("DOMContentLoaded", async function() {
-    console.log("Hello world!");
+  console.log("Hello world!");
     
-    // const main = document.getElementById("main");
-    // new Example(main)
-//     await fetch('https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=IBM&apikey=MKK0K02W1J79A7UI')
-//   .then(res => {
-//     return res.json();
-//   })
-//   .then(json => {
-//     console.log(json);
-//     const startPrice = json["Monthly Time Series"]["1999-12-31"]["1. open"]
-//     const fetcher = document.getElementById("apifetcher");
-//     fetcher.innerText = startPrice
-//   });
+  let invAmount
+  let startDate
+  let duration
+  let invVehicle
+
+  let totalYield
+  let endDate
+  let preferences
+  let scenCounter = 0;
+
   const testButtonYield = document.querySelector(".testbuttonyield");
-  testButtonYield.addEventListener("click", () => calculateYield(1000, 2003, 10, "GS"));
+
+  // testButtonYield.addEventListener("click", () => {
+  //   invAmount = parseFloat(document.getElementById("invAmount").value);
+  //   startDate = parseInt(document.getElementById("startDate").value);
+  //   duration = parseFloat(document.getElementById("duration").value);
+  //   invVehicle = document.getElementById("invVehicle").value;
+  //   calculateYield(invAmount, startDate, duration, invVehicle)
+  // });
 
   const testButtonGoods = document.querySelector(".testbuttongoods");
-  testButtonGoods.addEventListener("click", () => determineQuantities(10000, 2013, {"WHEAT": 70, "CORN": 30}));
+
+  // testButtonGoods.addEventListener("click", () => {
+  //   totalYield = document.getElementById("apifetcher").getAttribute("value");
+  //   endDate = (parseInt(document.getElementById("startDate").value) + parseFloat(document.getElementById("duration").value));
+  //   preferences = {"WHEAT": 70, "CORN": 30};
+  //   determineQuantities(totalYield, endDate, preferences)
+  // });
+
+
+
+  const testButtonCreateScenario = document.querySelector(".testbuttonaddscenario");
+
+  testButtonCreateScenario.addEventListener("click", () => {
+    scenCounter += 1;
+    new Scenario(scenCounter);
+  })
 
 });
 
