@@ -6,8 +6,8 @@ export async function calculateYield(invAmount, startDate, duration, invVehicle,
     console.log(totalYield)
 
     const fetcher = document.getElementById(`apifetcher${scenyield}`);
-    fetcher.innerText = totalYield
-    fetcher.setAttribute("value", `${totalYield}`)
+    fetcher.innerText = `Total Yield: $${totalYield.toFixed(2)}`
+    fetcher.setAttribute("value", `${totalYield.toFixed(2)}`)
     
 }
 

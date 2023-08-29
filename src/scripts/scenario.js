@@ -26,7 +26,7 @@ createNewScenario(num) {
 const scenarios = document.querySelector(".scenarios")
 scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
 <div class="investmentbox">
-  <label for="">Investment Amount:
+  <label for="">Investment Amount($):
     <input type="number" name="invAmount" id="invAmount${this.num}">
   </label>
   <br>
@@ -34,7 +34,7 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
     <input type="number" name="startDate" id="startDate${this.num}">
   </label>
   <br>
-  <label for="">Duration:
+  <label for="">Duration(years):
     <input type="number" name="duration" id="duration${this.num}">
   </label>
 </div>
@@ -46,7 +46,7 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
   <br>
   <input type="button" value="Show Yield" class="testbuttonyield" id="testbuttonyield${this.num}">
   <br>
-  <div id="apifetcher${this.num}">Total Yield</div>
+  <div id="apifetcher${this.num}">Total Yield:</div>
 </div>
 
 <div class="yieldbox">
