@@ -1,6 +1,5 @@
 
 export async function calculateYield(invAmount, startDate, duration, invVehicle, scenyield) {
-    debugger
     const growth = await getGrowth(startDate, duration, invVehicle)
 
     const totalYield = invAmount * growth

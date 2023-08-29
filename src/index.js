@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", async function() {
   const testButtonCreateScenario = document.querySelector(".testbuttonaddscenario");
 
   testButtonCreateScenario.addEventListener("click", () => {
-    debugger
     scenCounter += 1;
     new Scenario(scenCounter);
   })

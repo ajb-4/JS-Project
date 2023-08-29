@@ -13,7 +13,6 @@ export async function determineQuantities(totalYield, endDate, preferences, scen
         })
         .then(json => {
           console.log(json);
-          debugger
           const endPrice = json["data"][`${new Date().getFullYear() - endDate - 1}`]["value"]
           return parseFloat(endPrice);
         });

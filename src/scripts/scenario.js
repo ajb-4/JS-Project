@@ -82,7 +82,6 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
     };
     
     deleteScenario(scen) {
-      debugger
         const deleScen = document.getElementById(`scenario${scen}`)
         const deleModal = document.getElementById(`modalcontainer${scen}`)
         deleScen.remove(); 
@@ -133,7 +132,6 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
     const deleteScenarioButton = document.getElementById(`deleteScenario${this.num}`);
 
     deleteScenarioButton.addEventListener("click", () => {
-      debugger
       let scenDelete = this.num;
       this.deleteScenario(scenDelete);
     });
@@ -148,11 +146,10 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
     const exitCustBaskButton = document.getElementById(`exitmodal${this.num}`);
 
     exitCustBaskButton.addEventListener("click", () => {
-        debugger
-        const modalcontainer = document.getElementById(`modalcontainer${this.num}`);
-        modalcontainer.style.display = "none";
+      const modalcontainer = document.getElementById(`modalcontainer${this.num}`);
+      modalcontainer.style.display = "none";
     });
-  
+
   }
 
     
