@@ -12,7 +12,7 @@ export async function determineQuantities(totalYield, endDate, preferences, scen
     Object.keys(preferences).forEach(async key => {
 
         const goodExpense = (preferences[`${key}`]/100) * totalYield
-        const endPrice = await fetch(`https://www.alphavantage.co/query?function=${key.toUpperCase()}&interval=annual&apikey=GBZGO0T0WE931AOX`)
+        const endPrice = await fetch(`https://www.alphavantage.co/query?function=${key.toUpperCase()}&interval=annual&apikey=SJIU2BU3OS272LAE`)
         .then(res => {
           return res.json();
         })

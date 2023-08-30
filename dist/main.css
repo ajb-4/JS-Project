@@ -40,6 +40,7 @@ body {
 #closeinstructions {
   display: flex;
   justify-content: center;
+  background: linear-gradient(90deg, rgb(221, 139, 164) 23%, rgb(224, 162, 108) 64%, rgb(133, 168, 237) 83%);
 }
 
 .navbar {

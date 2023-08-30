@@ -30,7 +30,7 @@ export async function calculateYield(invAmount, startDate, duration, invVehicle,
 
 async function getGrowth(startDate, duration, invVehicle) {
 
-return await fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${invVehicle}&apikey=GBZGO0T0WE931AOX`)
+return await fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${invVehicle}&apikey=SJIU2BU3OS272LAE`)
 .then(res => {
   return res.json();
 })
