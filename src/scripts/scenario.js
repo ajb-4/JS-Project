@@ -54,7 +54,7 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
   <br>
   <input type="button" value="Show Me The Goods!" class="testbuttongoods" id="testbuttongoods${this.num}">
   <br>
-  <div id="apifetch${this.num}">Goods Hash</div>
+  <div id="apifetch${this.num}"></div>
 </div>
 
 <div class="scenariosummary">

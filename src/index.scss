@@ -4,12 +4,15 @@ html, body {
     min-height: 100%;
 }
 
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     background-image: linear-gradient(to right bottom, darkblue, gray, $color);
     padding-top: 100px;
     z-index: 1;
     background-repeat: no-repeat;
-    // height: 100%;
 }
 .navbar {
     position: fixed;
@@ -35,6 +38,7 @@ body {
 
 .titleandaddscen  p {
     font-size: 60px;
+    font-weight: bold;
 }
 
 .linklogos {
@@ -43,6 +47,8 @@ body {
     align-items: center;
     width: 300px;
 }
+
+
 
 .addscenbutton {
     display: flex;
@@ -108,8 +114,9 @@ body {
 #githublogo {
     display: flex;
     justify-content: flex-end;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid black;
 }
 
 #linkedinlogo {
@@ -121,11 +128,14 @@ body {
 
 .testbuttonaddscenario {
    background-color: lightgreen;
+   font-weight: bold;
+   width: 150px;
 }
 
 .deleteScenario {
-    background-color: rgb(237, 49, 49);
+    background-color: rgb(231, 81, 81);
     height: 50px;
+    font-weight: bold;
 }
 
 .testbuttonyield {
