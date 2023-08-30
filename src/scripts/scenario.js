@@ -27,21 +27,21 @@ const scenarios = document.querySelector(".scenarios")
 scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
 <div class="investmentbox">
   <label for="">Investment Amount($):
-    <input type="number" name="invAmount" id="invAmount${this.num}">
+    <input type="number" name="invAmount" class="inputbox" id="invAmount${this.num}">
   </label>
   <br>
   <label for="">Start Year:
-    <input type="number" name="startDate" id="startDate${this.num}">
+    <input type="number" name="startDate" class="inputbox" id="startDate${this.num}">
   </label>
   <br>
   <label for="">Duration(years):
-    <input type="number" name="duration" id="duration${this.num}">
+    <input type="number" name="duration" class="inputbox" id="duration${this.num}">
   </label>
 </div>
 
 <div class="vehiclebox">
-  <label for="">Vehicle:
-    <input type="text" name="invVehicle" id="invVehicle${this.num}">
+  <label for="">Ticker:
+    <input type="text" name="invVehicle" class="inputbox" id="invVehicle${this.num}">
   </label>
   <br>
   <input type="button" value="Show Yield" class="testbuttonyield" id="testbuttonyield${this.num}">

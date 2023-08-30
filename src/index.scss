@@ -1,17 +1,54 @@
-$color: darkblue;
+$color: #8860D0;
 
-#main {
-    color: $color;
+html, body {
+    min-height: 100%;
 }
 
-#main {
-    border: 4px solid $color;
+body {
+    background-image: linear-gradient(to right bottom, darkblue, gray, $color);
+    padding-top: 100px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    // height: 100%;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    color: whitesmoke;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    color: $color;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 35%, rgba(20,99,130,1) 73%, rgba(252,176,69,1) 83%);
 }
+
+.titleandaddscen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.titleandaddscen  p {
+    font-size: 60px;
+}
+
+.linklogos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.addscenbutton {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 
 .scenario {
@@ -21,7 +58,7 @@ $color: darkblue;
     align-items: center;
     padding-bottom: 15px;
     padding-top: 15px;
-    border-bottom: dashed $color;
+    border-bottom: ridge darkslategray;
 }
 
 .investmentbox {
@@ -31,6 +68,7 @@ $color: darkblue;
     padding: 20px;
     height: 100px;
     flex-direction: column;
+    background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177))
 }
 
 .vehiclebox {
@@ -40,6 +78,7 @@ $color: darkblue;
     padding: 20px;
     flex-direction: column;
     height: 100px;
+    background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177))
 }
 
 .yieldbox {
@@ -49,6 +88,7 @@ $color: darkblue;
     padding: 20px;
     flex-direction: column;
     height: 100px;
+    background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177))
 }
 
 .scenariosummary {
@@ -58,6 +98,7 @@ $color: darkblue;
     padding: 20px;
     flex-direction: column;
     width: 220px;
+    background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177))
 }
 
 .modalcontainer {
@@ -86,3 +127,21 @@ $color: darkblue;
     background-color: rgb(237, 49, 49);
     height: 50px;
 }
+
+.testbuttonyield {
+    background: radial-gradient(circle, rgba(104,169,170,1) 14%, rgba(253,144,45,1) 90%);
+}
+
+.customizebasket {
+    background: radial-gradient(circle, rgba(104,169,170,1) 14%, rgba(253,144,45,1) 90%);
+}
+
+.testbuttongoods {
+    background: radial-gradient(circle, rgba(104,169,170,1) 14%, rgba(253,144,45,1) 90%);
+}
+
+.inputbox {
+    background-color: rgb(157, 174, 190);
+}
+
+

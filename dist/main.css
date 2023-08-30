@@ -1,17 +1,53 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-#main {
-  color: darkblue;
+html, body {
+  min-height: 100%;
 }
 
-#main {
-  border: 4px solid darkblue;
+body {
+  background-image: linear-gradient(to right bottom, darkblue, gray, #8860D0);
+  padding-top: 100px;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  color: whitesmoke;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
   font-size: 40px;
+  height: 60px;
+  background: linear-gradient(90deg, rgb(131, 58, 180) 35%, rgb(20, 99, 130) 73%, rgb(252, 176, 69) 83%);
+}
+
+.titleandaddscen {
   display: flex;
+  align-items: center;
   justify-content: center;
-  color: darkblue;
+  width: 40%;
+}
+
+.titleandaddscen p {
+  font-size: 60px;
+}
+
+.linklogos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+}
+
+.addscenbutton {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .scenario {
@@ -21,43 +57,47 @@
   align-items: center;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: dashed darkblue;
+  border-bottom: ridge darkslategray;
 }
 
 .investmentbox {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid darkblue;
+  border: 2px solid #8860D0;
   padding: 20px;
   height: 100px;
   flex-direction: column;
+  background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177));
 }
 
 .vehiclebox {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid darkblue;
+  border: 2px solid #8860D0;
   padding: 20px;
   flex-direction: column;
   height: 100px;
+  background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177));
 }
 
 .yieldbox {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid darkblue;
+  border: 2px solid #8860D0;
   padding: 20px;
   flex-direction: column;
   height: 100px;
+  background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177));
 }
 
 .scenariosummary {
   display: flex;
   justify-content: flex-start;
-  border: 2px solid darkblue;
+  border: 2px solid #8860D0;
   padding: 20px;
   flex-direction: column;
   width: 220px;
+  background-image: linear-gradient(to right bottom, pink, rgb(233, 233, 109), rgb(177, 245, 177));
 }
 
 .modalcontainer {
@@ -85,4 +125,20 @@
 .deleteScenario {
   background-color: rgb(237, 49, 49);
   height: 50px;
+}
+
+.testbuttonyield {
+  background: radial-gradient(circle, rgb(104, 169, 170) 14%, rgb(253, 144, 45) 90%);
+}
+
+.customizebasket {
+  background: radial-gradient(circle, rgb(104, 169, 170) 14%, rgb(253, 144, 45) 90%);
+}
+
+.testbuttongoods {
+  background: radial-gradient(circle, rgb(104, 169, 170) 14%, rgb(253, 144, 45) 90%);
+}
+
+.inputbox {
+  background-color: rgb(157, 174, 190);
 }
