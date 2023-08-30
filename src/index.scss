@@ -14,6 +14,33 @@ body {
     z-index: 1;
     background-repeat: no-repeat;
 }
+
+.instructions {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid purple;
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    top: 25%;
+    left: calc(50vw - 250px);
+    margin: 0 auto;
+    background: radial-gradient(circle, rgba(251,211,229,1) 28%, rgba(170,202,240,1) 59%);
+    padding: 40px;
+}
+
+#instructiontitle {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#closeinstructions {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar {
     position: fixed;
     top: 0;

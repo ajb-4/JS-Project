@@ -2,6 +2,13 @@ import Scenario from "./scripts/scenario";
 
 document.addEventListener("DOMContentLoaded", async function() {
   console.log("Hello world!");
+
+  const closeinstructions = document.getElementById("closeinstructions");
+
+  closeinstructions.addEventListener("click", () => {
+    const instructionsmodal = document.querySelector(".instructions");
+    instructionsmodal.style.display = "none";
+  })
     
   let scenCounter = 0;
 
