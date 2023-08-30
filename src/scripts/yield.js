@@ -1,5 +1,8 @@
 //Scrap Work Code
 
+//SJIU2BU3OS272LAE
+//MKK0K02W1J79A7UI
+//GBZGO0T0WE931AOX
 `<div class="scenario" id="scenario${this.num}">
 <div class="investmentbox">
   <label for="">Investment Amount:

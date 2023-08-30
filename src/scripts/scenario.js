@@ -56,6 +56,27 @@ scenarios.innerHTML +=  `<div class="scenario" id="scenario${this.num}">
   <br>
   <div id="apifetch${this.num}">Goods Hash</div>
 </div>
+
+<div class="scenariosummary">
+  <div id="invamountsum${this.num}">Investment Amount:</div>
+  <br>
+  <div id="startdatesum${this.num}">Start Date:</div>
+  <br>
+  <div id="enddatesum${this.num}">End Date:</div>
+  <br>
+  <div id="durationsum${this.num}">Duration:</div>
+  <br>
+  <div id="totyieldsum${this.num}">Total Yield:</div>
+  <br>
+  <div id="WHEATsum${this.num}">Wheat:</div>
+  <br>
+  <div id="CORNsum${this.num}">Corn:</div>
+  <br>
+  <div id="SUGARsum${this.num}">Sugar:</div>
+  <br>
+  <div id="COFFEEsum${this.num}">Coffee:</div>
+</div>
+
 <input type="button" value="Delete Scenario ${this.num}" class="deleteScenario" id="deleteScenario${this.num}">
 </div>
 

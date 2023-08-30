@@ -51,6 +51,15 @@ $color: darkblue;
     height: 100px;
 }
 
+.scenariosummary {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid $color;
+    padding: 20px;
+    flex-direction: column;
+    width: 220px;
+}
+
 .modalcontainer {
     display: none;
 }
