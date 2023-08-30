@@ -4,15 +4,15 @@ In the end, users will see 2D renderings of various investment scenario, side by
 
 Functionality and MVPs
 
-In Chilly Printer users will be able to:
+In "Show Me The Goods!" users are able to:
 
-1.) input a specific currency, start date, duration, investment vehicle 2.) customize a basket of goods they wish to denominate their end value w/ 2D renderings 3.) hover over input boxes to visualize the details of prices, ROI, and quantity of goods 4.) generate many scenarios side by side and have them render next to each other for comparison
+1.) input an investment amount, start date, duration, investment vehicle 2.) customize a basket of goods(using percentages of wheat, corn, sugar, coffee) they wish to denominate their end value 3.) generates a summary of user inputs, commodity quantities, commodity prices (at the end date), total yield($), and quantity of goods 4.) generate many scenarios side by side and have them render next to each other for comparison
 
-In addition, this project will include: 5.) ideally, users will be able to reverse their input/output, such that they can look backwards in time and convert today’s goods to “yesterday’s” dollars 6.) have subtle thematic animations and sounds to make the printer 'brrr'
+In addition, I am actively working to build functionality for: 5.) users to be able to reverse their input/output, such that they can look backwards in time and convert today’s goods to “yesterday’s” dollars 6.) have subtle thematic animations and sounds to make the site more engaging
 
 Technologies, Libraries, and API's
 
-1.) Canvas for 2D animations 2.) API for market data: https://www.alphavantage.co/documentation/ 3.) fall-back data source, pulled in as JSON, stored locally and queried (if API is bottleknecked of data is limited): https://www.npmjs.com/package/yahoo-finance2 4.) Also NASDAQ.com has convenient databases that can be saved as JSON 5.) Webpack and Babel to bundle and transpile the JS code 6.) npm to manage project dependencies
+1.) API for market data: https://www.alphavantage.co/documentation/ 2.) Webpack and Babel to bundle and transpile the JS code 3.) npm to manage project dependencies
 
 Implemtation Timeline Thursday: get fluent in accessing my market data via API's and JSON "querying", make sure I have access to all possible data Friday: build all my classes for various objects and work on their methods needed to calculate output Weekend: end-to-end testing for user input to get the correct values for output objects, nothing will be rendered yet, just console.logging and making sure API's/data fetching and calculators work Monday: work on building out skeleton of "frontend", using Canvas and creating input boxes/forms, drop down boxes, making sure my objects are at least rendering where I would like Tuesday: first day of CSS, styling all of my elements and exploring ways of making objects interact smoothly w/ Canvas Wednesday: day of testing site, identifying any bugs, poor design/styling flaws and fixing anything I've missed or ignored in the previous days Thursday: finishing touches and launching the site into production on my repo
 
