@@ -30,7 +30,12 @@ export async function determineQuantities(totalYield, endDate, preferences, scen
         // fetcher2.innerText += `${key}: ${yieldHash[key]}`;
 
         const commsum = document.getElementById(`${key}sum${scen}`);
-        commsum.innerHTML = `${key}: ${yieldHash[key].toFixed(2)} pounds @ $${(endPrice/100).toFixed(2)}/pound`
+        if (key==="WHEAT" || key==="CORN") {
+          commsum.innerHTML = `${key}: ${(yieldHash[key] * 2205).toFixed(2)} pounds @ $${(endPrice/2205).toFixed(2)}/pound`
+        } else if (key==="SUGAR" || key==="COFFEE") {
+          commsum.innerHTML = `${key}: ${(yieldHash[key] * 100).toFixed(2)} pounds @ $${(endPrice/100).toFixed(2)}/pound`
+        }
+        
 
     })
 
