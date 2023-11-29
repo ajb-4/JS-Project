@@ -5,7 +5,7 @@
 //GBZGO0T0WE931AOX
 `<div class="scenario" id="scenario${this.num}">
 <div class="investmentbox">
-  <label for="">Investment Amount:
+  <label for="">Investment Amount ($):
     <input type="number" name="invAmount" id="invAmount${this.num}">
   </label>
   <br>
